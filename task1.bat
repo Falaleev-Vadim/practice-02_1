@@ -1,26 +1,26 @@
 git init
 
-echo Äóìàë, æèçíü ýòî ðîìàí, à ýòî ïðîñòî ïîâåñòü > story.txt
+echo Ð”ÑƒÐ¼Ð°Ð», Ð¶Ð¸Ð·Ð½ÑŒ ÑÑ‚Ð¾ Ñ€Ð¾Ð¼Ð°Ð½, Ð° ÑÑ‚Ð¾ Ð¿Ñ€Ð¾ÑÑ‚Ð¾ Ð¿Ð¾Ð²ÐµÑÑ‚ÑŒ > story.txt
 git add -A
 git commit -m "Initial commit"
 
 git flow init
 
 git flow feature start feature1
-echo Äóøó Äüÿâîëó ïðîäàì â îáìåí íà òâîþ ñîâåñòü >> story.txt
+echo Ð”ÑƒÑˆÑƒ Ð”ÑŒÑÐ²Ð¾Ð»Ñƒ Ð¿Ñ€Ð¾Ð´Ð°Ð¼ Ð² Ð¾Ð±Ð¼ÐµÐ½ Ð½Ð° Ñ‚Ð²Ð¾ÑŽ ÑÐ¾Ð²ÐµÑÑ‚ÑŒ >> story.txt
 git add -A
 git commit -m "Feature1"
 git flow feature finish feature1
 
 git flow release start RELEASE_v1
-echo Äàì òåáå îáîéìó, âûñòðåëè ìíå â ñïèíó äâàæäû >> story.txt
+echo Ð”Ð°Ð¼ Ñ‚ÐµÐ±Ðµ Ð¾Ð±Ð¾Ð¹Ð¼Ñƒ, Ð²Ñ‹ÑÑ‚Ñ€ÐµÐ»Ð¸ Ð¼Ð½Ðµ Ð² ÑÐ¿Ð¸Ð½Ñƒ Ð´Ð²Ð°Ð¶Ð´Ñ‹ >> story.txt
 git add -A
 git commit -m "Release_v1"
 git flow release finish RELEASE_v1
 
 git checkout main
 git flow hotfix start VERSION_v2
-echo Ñòîëüêî ëåò â ýòîé èãðå, íî äî ñèõ ïîð ÿ ÷óþ æàæäó >> story.txt
+echo Ð¡Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð»ÐµÑ‚ Ð² ÑÑ‚Ð¾Ð¹ Ð¸Ð³Ñ€Ðµ, Ð½Ð¾ Ð´Ð¾ ÑÐ¸Ñ… Ð¿Ð¾Ñ€ Ñ Ñ‡ÑƒÑŽ Ð¶Ð°Ð¶Ð´Ñƒ >> story.txt
 git add -A
 git commit -m "Hotfix_v2"
 git flow hotfix finish VERSION_v2
@@ -29,7 +29,7 @@ echo 1. git log: > task1.txt
 git log --pretty=oneline --all >> task1.txt
 echo: >> task1.txt
 
-echo 2. ãðàô: >> task1.txt
+echo 2. Ð³Ñ€Ð°Ñ„: >> task1.txt
 git log --graph >> task1.txt
 echo: >> task1.txt
 
